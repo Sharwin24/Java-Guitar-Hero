@@ -19,8 +19,8 @@ public class GuitarString {
   public GuitarString(double[] init) {
     this.rb = new RingBuffer(init.length);
 
-    for (int i = 0; i < init.length; i++) {
-      rb.enqueue(init[i]);
+    for (double i : init) {
+      rb.enqueue(i);
     }
 
   }
